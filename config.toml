@@ -4,7 +4,7 @@ theme = "dot"
 
 [params]
 primaryColor = "#7243bf"
-secondaryColor = "#2e94df"
+secondaryColor = "#c0e4fd"
 textColor = "#636363"
 textColorDark = "#242738"
 whiteColor = "#ffffff"
@@ -30,23 +30,23 @@ whiteColor = "#ffffff"
         name = "Faq"
         url = "/faq"
         
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "pages"
-        url = "/pages"
-        hasChildren = true
+      # [[Languages.en.menu.main]]
+        # weight = 2
+        # name = "pages"
+        # url = "/pages"
+        # hasChildren = true
 
-          [[Languages.en.menu.main]]
-          parent = "pages"
-          name = "Elements"
-          URL = "/elements"
-          weight = 1
+          # [[Languages.en.menu.main]]
+          # parent = "pages"
+          # name = "Elements"
+          # URL = "/elements"
+          # weight = 1
 
-          [[Languages.en.menu.main]]
-          parent = "pages"
-          name = "Installation"
-          URL = "/installation"
-          weight = 2
+          # [[Languages.en.menu.main]]
+          # parent = "pages"
+          # name = "Installation"
+          # URL = "/installation"
+          # weight = 2
 
 
 
@@ -77,19 +77,19 @@ whiteColor = "#ffffff"
 
     # footer social icon
     [[Languages.en.socialIcon]]
-      icon = "ti-facebook"
+      icon = "fab fa-facebook-f"
       URL = "https://www.facebook.com/NavCoin/"
 
     [[Languages.en.socialIcon]]
-      icon = "ti-twitter-alt"
+      icon = "fab fa-twitter"
       URL = "https://twitter.com/NavCoin"
       
     [[Languages.en.socialIcon]]
-      icon = "ti-discord-alt"
+      icon = "fab fa-discord"
       URL = "https://discord.gg/y4Vu9jw"
       
     [[Languages.en.socialIcon]]
-      icon = "ti-medium"
+      icon = "fab fa-medium-m"
       URL = "http://medium.com/nav-coin"
 
 
