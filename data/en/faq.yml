@@ -1,0 +1,115 @@
+faqItem : 
+  
+  - ID :  collapseOne  
+    title  :  What is a cryptocurrency?
+    content : >
+      A cryptocurrency is essentially a virtual currency that can be used to buy and sell goods and services (similar to USD etc). 
+      <br>Transactions are encrypted and transferred from one virtual “wallet” to another, without needing to go through a traditional bank or credit card provider. This allows you to avoid the fee’s you usually face when going through a bank (e.g. currency exchange, processing fee’s). 
+      <br>A key feature of cryptocurrencies is decentralization, as all transactions are recorded into the network, which prevents against fraud and attacks (as there is no single source that holds all the data). 
+      <br>It also uses cryptographic code to secure the network, which makes it near impossible to counterfeit.
+
+  - ID :  collapseTwo
+    title  :  What is NavCoin?
+    content :  >
+      NavCoin is a cryptocurrency, that has been based off Bitcoin. So while it offers all the benefits of Bitcoin, it also has a few other added benefits such as faster transactions and low electricity usage. A key difference is that we use the Proof of Stake algorithm to secure the network (Bitcoin & most others use Proof of Work). 
+      <br>The benefit of using Proof of Stake is that it’s much more lightweight and you don’t need huge servers to mine NAV.
+
+  - ID :  collapseThree
+    title  :  What is the point of NavCoin?
+    content :  >
+      Blockchain technology has the potential to completely revolutionise the world – making the world a more trusting place, and giving ordinary people the power to take control of their lives. NavCoin is built around 1 key principle – usability. The biggest problem with the current blockchain technologies is that they are far from user friendly. 
+      <br>We believe that for blockchains to take off into the mainstream, it has to be so easy that the average person wouldn’t need to know anything to use it.
+
+  - ID :  collapseFour
+    title  :  How does NavCoin differ from other coins?
+    content : >
+      What sets us apart is: 
+      <br>- Faster transactions times (30 seconds versus 10+ mins).
+      <br>- Low cost transactions (only 0.0001 NAV).
+      <br>- Participating in Proof of Stake mining doesn’t require a huge server to run. Even a 5v Raspberry Pi can run it.
+      <br>- A highly active community, with updates every week.
+
+  - ID :  collapseFive
+    title  :  Does NavCoin support private transactions?
+    content :  NavTech is a separate blockchain and software platform which operates on top of the NavCoin protocol. Transaction information is optionally encrypted and sent through a second blockchain, which breaks the link between the two addresses. It’s easy to use and comes pre-configured in the latest NavCoin wallet. It is open source, anyone can setup their own servers or contribute to NavTech’s development.
+
+  - ID :  collapseSix
+    title  :  How is NavCoin different from other privacy coins?
+    content : >
+      There are two main technologies that our competitors use:  CryptoNote/RingCT (used by Monero, Bytecoin) and ZKSnarks (used by ZCash).
+      Both of these are new algorithms that don’t have many studies behind them. And there are several academics that question the validity of these algorithms (such as here <a href="https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony">https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony</a> ). As soon as those algorithms are broken, the whole transaction history would be unveiled.
+      NavTech private payments are based on RSA, which is a widely used and studied algorithm. It currently uses 2048 bit length keys which are nowadays considered safe.
+
+  - ID :  collapseSeven
+    title  :  What is Proof Of Stake (PoS)?
+    content : >
+      Our network is secured by Proof Of Stake consensus, which means that NAV are used to determine network weight when validating transaction blocks.
+      <br>Proof of Work (used by Bitcoin) requires powerful computers to calculate huge mathematical problems in order to process transactions (this process is called ‘mining’). The first computer that ‘solves’ the problem, receives a reward for doing so, which incentivises people to mine. The issue with this approach is that it is very energy intensive – experts have argued that Bitcoin transactions may consume as much electricity as Denmark by 2020. 
+      <br>Because it is getting so expensive to mine (the cost of electricity, hardware etc), what has happened is that mining is now becoming more centralised, with only a handful of groups running the majority of the Bitcoin network.
+      Proof of Stake on the other hand is much more efficient, which makes it so that anyone can contribute to validating transactions.
+
+  - ID :  collapseEight
+    title  :  How do I participate in PoS?
+    content :  In order to participate in Proof of Stake transaction validation, you need to install the NavCoin Core wallet, and transfer your NavCoin into this wallet. Once there, go into your settings and unlock your wallet for staking to begin validating blocks.
+
+  - ID :  collapseNine
+    title  :  How often should I expect to find a new block?
+    content : >
+      It can take a while to successfully find a new block, so keep your wallet running as often as possible to increase your chances.
+      <br>Here are some estimated staking times based on a wallet running 24 hours per day: 
+      <br>1000 NAV = 1 new block found per week
+      <br>10,000 NAV = 1 new block found per day
+
+  - ID :  collapseTen
+    title  :  Why does the staking amount change over time?
+    content :  >
+      The amount of staking reward is correlated to number of coins in the wallet and its age – and is fixed to give you 5% per year.
+      <br>What does change is how often those rewards are received, because as the difficulty increases (when more coins are staking in the network) it will take more time to get a stakes.
+      But as the reward amount does not change, it will accumulate until a reward is obtained.
+
+  - ID :  collapseEleven
+    title  :  What is SegWit & why was it activated on NavCoin?
+    content : >
+      SegWit is an update to the core of the NavCoin technology, and was initially proposed by developers for Bitcoin. Because it was a large change to the underlying technology, it needed to be voted on and supported by 75% of the network – which it successfully did in May 2017. 
+      <br>SegWit gives NavCoin a huge amount of flexibility in its blockchain, which allows it to implement the next generation of projects they have lined up – the lightning network and atomic swaps.
+
+  - ID :  collapseTwelve
+    title  :  How can I find NavCoins current price?
+    content : >
+      Coinmarketcap is the best place to go for update to date information:  <a href="https://coinmarketcap.com/currencies/nav-coin/">https://coinmarketcap.com/currencies/nav-coin/</a>
+
+  - ID :  collapseThirteen
+    title  :  What do I need to do to get started?
+    content :  Check out our Getting Started page to see what you should do to get up and running with NavCoin <a href="https://navcoin.org/getting-started/">https://navcoin.org/getting-started/</a>
+
+  - ID :  collapseFourteen
+    title  :  What are the NavCoin team working on right now?
+    content : > 
+      Check out our project roadmap page to see an updated list of what the community is  working on:  <a href="https://navcoin.org/project-roadmap/">https://navcoin.org/project-roadmap/</a>
+
+  - ID :  collapseFifteen
+    title :  Which exchanges to use?
+    content :  > 
+      A list of exchanges can be found at <a href="https://navcoin.org/en/buy-navcoin">https://navcoin.org/en/buy-navcoin</a>.
+      <br> Note:  exchanges will have an associated fee when making a purchase.
+
+  - ID :  collapseSixteen
+    title  :  Which wallet should I download?
+    content :  We would recommend downloading the latest version of the NavCoin core wallet, as this allows you to participate in the networks transaction validation. If you don’t want to run a full node wallet, we recommend trying the lite wallet NavPay, which is multi-platform and on mobile. Another alternative is the Coinomi wallet. Click <a href="https://navcoin.org/en/wallets/">here</a> to visit the wallet download page.
+
+  - ID :  collapseSeventeen
+    title  :  How do I keep my NAV safe?
+    content :  Because some exchanges & services have been targets of attacks in the past, the safest place to keep your NAV is in your own encrypted NavCoin wallet. Always remember to backup your private keys!
+
+  - ID :  collapseEighteen
+    title  :  How can I contribute to NAV?
+    content :  NavCoin is free software and any developer can contribute to the project. Everything you need is in the GitHub repository. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines.
+
+  - ID :  collapseNineteen
+    title  :  Do I need a Raspberry Pi to use NavCoin?
+    content :  You don’t need a Raspberry Pi unless you wish to setup a NavPi. You can find setup instructions for the NavPi in the “How to setup the NavPi” article.
+
+  - ID :  collapseTwenty
+    title  :  Who do I contact if I'm having technical issues?
+    content :  Try searching the Knowledge Base or visiting the support channels in the community Discord.
+
