@@ -9,7 +9,7 @@ Coming soon
 
 If you find any mistakes you can either give feedback by making an issue report on the github repo or reaching out on the NavCoin discord.
 
-To make an issue report, visit [this link](https://github.com/NAVCoin/KnowledgeBase/issues/new) to make an issue.
+To make an issue report, visit [this link](https://github.com/NAVCoin/KnowledgeBase/issues/new).
 
 Visit the NavCoin discord here: https://discord.gg/y4Vu9jw
 
