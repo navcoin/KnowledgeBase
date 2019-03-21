@@ -1,7 +1,6 @@
 ---
 title: "Enable ZRAM on the NavPi"
 date: "2019-03-21"
-
 ---
 
 The steps in this guide come from [novaspirit](https://github.com/novaspirit)'s repo [rpi_zram](https://github.com/novaspirit/rpi_zram) and further information about ZRAM can be found [here](https://en.wikipedia.org/wiki/Zram).

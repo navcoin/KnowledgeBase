@@ -56,7 +56,7 @@ whiteColor = "#ffffff"
       title = "NavCoin Knowledge base"
       description = "Find advice and answers from the NavCoin community"
       image = "images/banner.jpg"
-      placeholder = "Have a question? Just ask here or enter terms"
+      placeholder = "Write here to search in these topic(s)"
 
     # Topics
     [Languages.en.params.topics]
