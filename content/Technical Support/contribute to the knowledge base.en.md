@@ -3,8 +3,6 @@ title: "How to contribute to the NavCoin Knowledge Base"
 date: "2019-03-21"
 ---
 
-Coming soon
-
 ### Proofread articles and give feedback
 
 If you find any mistakes you can either give feedback by making an issue report on the github repo or reaching out on the NavCoin discord.
