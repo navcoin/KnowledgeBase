@@ -65,12 +65,16 @@
           <div class="p-5 bg-white">
               <h2>{{ .Title }}</h2>
               <div class="bg-gray p-4">
+                  {{ if lt (len .Data.Pages) 1 }}
+                  <h3 class="mt-0">There are currently no articles on this topic</h3>
+                  {{else}}
                   <h3 class="mt-0">Articles</h3>
                   <ul class="list-unstyled">
                     {{ range .Data.Pages }}
                     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                     {{ end }}
                   </ul>
+                  {{end}}
               </div>
           </div>
         </div>
