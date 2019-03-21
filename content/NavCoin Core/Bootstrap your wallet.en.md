@@ -7,9 +7,12 @@ date: "2019-03-21"
 
 The NavCoin core wallet has automatic boostrap capability built in. In the toolbar simply look under File -> Bootstrap blockchain. There will be a URL prefilled in the input field, you can either click 'OK' to download and install that blockchain or you can paste in a URL from another source.
 
+A boostrap for the wallet can be downloaded from [here](https://s3.amazonaws.com/navcoin-bootstrap/bootstrap-navcoin_mainnet.tar.)
+
 After clicking OK your wallet will close (if it fails to reopen, simply reopen it yourself), and when it reopens it will download and install the bootstrap from the provided URL automatically.
 
 NOTE: this may take some time as the blockchain is around 2GB in size
+
 
 ### Manually bootstrap
 
