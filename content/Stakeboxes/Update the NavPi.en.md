@@ -2,7 +2,7 @@
 title: How to update the NavPi
 ---
 
-## Updating the User Interface
+### Updating the User Interface
 
 You should be able to update simply by using the “update” button in the “server” section of the control page.
 
@@ -22,7 +22,7 @@ Pull down the latest version.
 
 It should tell you that it pulled the latest version from GitHub and show you the files it updated, or say if you’re already up to date.
 
-## Updating the NavCoin Daemon
+### Updating the NavCoin Daemon
 
 If you’ve purchased or installed your NavPi recently, it should automatically check for updates every 24 hours. When a new update is found, it should download it and display an alert on the home screen of the Web Interface that says you need to reboot to install the update. Follow the instructions on screen and when your NavPi reboots it should have the latest version running.
 

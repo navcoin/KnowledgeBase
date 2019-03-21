@@ -1,35 +1,24 @@
 ---
-author: "Michael Henderson"
-date: 2014-09-28
+date: "2019-03-18"
 title: "Creating a Community Fund proposal"
-
-tags: [
-    "NavCoin Core Wallet",
-    "Community Fund"
-]
-date: "2014-04-02"
-categories: [
-    "NavCoin Core Wallet",
-    "Community Fund"
-]
 draft: true
 ---
 
-## Core Wallet
+### NavCoin Core Wallet
 
 
  - Go to the create proposal page in the Proposal Builder and fill in the form
  - After filling in the form, click the GENERATE COMMAND button and copy the code that appears below.
  - Open your NavCoin Core wallet and in the dropdowns select Debug Window under Help.
- - In the textbox enter walletpassphrase "passphrase" timeout, where "passphrase" is your wallet’s password and `timeout` is how long you wish to unlock your wallet in seconds.
- - e.g. walletpassphrase "MySecurePassword" 30
+ - In the textbox enter `walletpassphrase "passphrase" timeout`, where `"passphrase"` is your wallet’s password and `timeout` is how long you wish to unlock your wallet in seconds.
+ - e.g. `walletpassphrase "MySecurePassword" 30`
  - With your wallet unlocked, paste in the generated code from the proposal website
- - e.g. createproposal mnyKBfcG4cGfhNZQqbBAaN1ujvjyMEg9wt 1000 42595200 "NavCoin Italia meet up event 2019 funding"
+ - e.g. `createproposal mnyKBfcG4cGfhNZQqbBAaN1ujvjyMEg9wt 1000 42595200 "NavCoin Italia meet up event 2019 funding"`
 
 Your proposal has now been submitted.
 
 
-## NavPi
+### NavPi
 
  - Open the webview of your NavPi in your web browser
  - e.g. 192.168.30.247
@@ -41,10 +30,10 @@ Your proposal has now been submitted.
 Your proposal has now been submitted
 
 
-## If something went wrong
+### If something went wrong
 
 If something went wrong make sure that:
  - You have at least 50 NAV in your wallet as this is the minimum fee required to submit a proposal
- - You pasted in the entire createproposal command
- - Your wallet didn’t relock itself before you pasted in the createproposal command (if you’re using the NavCoin Core Wallet)
+ - You pasted in the entire `createproposal` command
+ - Your wallet didn’t relock itself before you pasted in the `createproposal` command (if you’re using the NavCoin Core Wallet)
 
