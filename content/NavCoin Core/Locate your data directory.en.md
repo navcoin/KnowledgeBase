@@ -3,6 +3,15 @@ title: How to locate your NavCoin data directory
 date: "2019-03-21"
 ---
 
+## Note
+
+The NavCoin data folder contains important files including the blockchain, the `wallet.dat` and the `navcoin.conf`. Messing with these files without knowing what you are doing can lead to the loss of coins so proceed with caution!
+
+Make sure you have a back up your wallet before making changes to this directory.
+For information on backing up your wallet see [this guide](/navcoin-core/backup-your-wallet)
+
+## Location
+
 The location of the data directory differs depending on your operating system. By default you can find it in the following locations:
 
 ### Windows
@@ -18,7 +27,3 @@ The location of the data directory differs depending on your operating system. B
 `~/.navcoin4/`
 
 
-## Be careful
-
-Make sure not to delete the wallet directory without backing up your wallet.
-For information on backing up your wallet see [this guide](/navcoin-core/backup-your-wallet)

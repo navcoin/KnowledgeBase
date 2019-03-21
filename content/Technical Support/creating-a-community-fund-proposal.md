@@ -12,6 +12,7 @@ categories: [
     "NavCoin Core Wallet",
     "Community Fund"
 ]
+draft: true
 ---
 
 ## Core Wallet
