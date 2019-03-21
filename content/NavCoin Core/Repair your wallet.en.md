@@ -15,6 +15,6 @@ If your wallet is out of sync, either wait, and allow it to sync naturally, or f
 
 Finally in the toolbar of the NavCoin Core wallet, under `File` there is a `Repair Wallet` option. Click this an the software will attempt to repair your wallet.
 
-### Still experiencing issues
+### If you are still experiencing issues
 
 Visit the NavCoin Community Discord server and ask for help in the `#navcoin-support` channel: https://discord.gg/y4Vu9jw

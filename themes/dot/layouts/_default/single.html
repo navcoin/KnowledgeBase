@@ -52,6 +52,9 @@
       </div>
       <div class="col-lg-9">
         <div class="p-5 bg-white">
+            <a href="https://github.com/navcoin/knowledgebase/edit/master/content/{{ .File.Path }}" target="e" title="Edit this page on GitHub" class="github-edit">
+              Edit this page on Github <span class="fa fa-edit"></span>
+            </a>
             <h2>{{ .Title }}</h2>
             {{ .Content }}
             <p class="post-meta border-bottom pb-3 mb-0">Updated on {{ .PublishDate.Format "02 Jan 2006" }}</p>
