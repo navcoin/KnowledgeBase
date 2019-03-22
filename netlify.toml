@@ -1,0 +1,69 @@
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-bootstrap-your-core-wallet/ "
+  to = "https://info.navcoin.org/bootstrap-your-wallet/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-update-your-navcoin-core-wallet/ "
+  to = "https://info.navcoin.org/navcoin-core/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-update-the-navpi/"
+  to = "https://info.navcoin.org/stakeboxes/update-the-navpi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/navpi-usb-swap/"
+  to = "https://info.navcoin.org/stakeboxes/configure-navpi-to-use-usb-swap"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/navpi-sd-swap/"
+  to = "https://info.navcoin.org/stakeboxes/add-swap-to-a-navpi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/backup-dat-wallet/"
+  to = "https://info.navcoin.org/navcoin-core/encrypt-and-backup-your-wallet"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-find-the-navcoin-data-folder/"
+  to = "https://info.navcoin.org/navcoin-core/locate-your-data-directory"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/fixing-a-wallet-balance-with-missing-coins-incorrect-balance/ "
+  to = "https://info.navcoin.org/navcoin-core/wallet-balance-is-wrong-or-not-syncing"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-open-the-firewall-ports-for-navcoin-core-and-navpi/"
+  to = "https://info.navcoin.org/general-support/wallet-balance-is-wrong-or-not-syncing"
+  status = 301
+  force = true
+
+
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/restoring-your-wallet-to-a-navpi/"
+  to = "https://info.navcoin.org/stakeboxes/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-increase-your-connection-count/"
+  to = "https://info.navcoin.org/navcoin-core/"
+  status = 301
+  force = true
