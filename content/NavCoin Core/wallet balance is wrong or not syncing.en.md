@@ -1,5 +1,5 @@
 ---
-title: Fixing syncing issues with the NavCoin Core wallet
+title: Fixing balance and syncing issues with the NavCoin Core wallet
 date: "2019-03-21"
 ---
 
