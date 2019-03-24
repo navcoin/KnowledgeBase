@@ -63,7 +63,27 @@
   force = true
 
 [[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-set-up-the-navpi/"
+  to = "https://info.navcoin.org/stakeboxes/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://info.navcoin.org/knowledge-base/how-to-increase-your-connection-count/"
   to = "https://info.navcoin.org/navcoin-core/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-to-restore-your-navcoin-core-wallet-from-a-backup/"
+  to = "https://info.navcoin.org/navcoin-core/import-an-existing-wallet"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info.navcoin.org/knowledge-base/how-do-i-get-coins-out-of-the-electrum-wallet/"
+  to = "https://info.navcoin.org/"
+  status = 301
+  force = true
+
+
