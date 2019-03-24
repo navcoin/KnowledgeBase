@@ -25,5 +25,3 @@ The location of the data directory differs depending on your operating system. B
 ### Linux
 
 `~/.navcoin4/`
-
-
