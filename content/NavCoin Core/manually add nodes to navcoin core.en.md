@@ -6,7 +6,7 @@ We will be modifing your wallet's configuration file, so first locate your NavCo
 
 Open the file called `navcoin.conf` in a text editor, if you don't have a file called `navcoin.conf` in the `navcoin4` folder, create a new file with the name `navcoin.conf`.
 
-Next, in your web browser, go to https://chainz.cryptoid.info/nav/#!network and click node list for newest version in the list (this should be the top of the list, in thes example below it's `/NavCoin:4.5.2/`)
+Next, in your web browser, go to https://chainz.cryptoid.info/nav/#!network and click node list for newest version in the list (this should be the top of the list, in this example below it's `/NavCoin:4.5.2/`)
 
 ![where to find the node list](/images/where-is-the-node-list.png)
 
