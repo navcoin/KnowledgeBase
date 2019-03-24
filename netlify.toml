@@ -79,7 +79,7 @@
   status = 301
   force = true
 
-[[redirects]
+[[redirects]]
   from = "https://info.navcoin.org/knowledge-base/restoring-your-wallet-to-a-navpi/"
   to = "https://info.navcoin.org/stakeboxes/"
   status = 301
