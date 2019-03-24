@@ -1,7 +1,7 @@
 {{ define "main" }}
 
   {{ "<!-- page title -->" | safeHTML }}
-  <section class="section bg-dark">
+  <section class="section main-bg">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
@@ -64,7 +64,7 @@
         <div class="col-lg-9">
           <div class="p-5 bg-white">
               <h2>{{ .Title }}</h2>
-              <div class="bg-gray p-4">
+              <div class="p-4">
                   {{ if lt (len .Data.Pages) 1 }}
                   <h3 class="mt-0">There are currently no articles on this topic</h3>
                   {{else}}
