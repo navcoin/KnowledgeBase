@@ -13,7 +13,7 @@ If you have no peers you will be unable to sync. Peers are other nodes on the Na
 In your core wallet it will list your 'active connections' on the home screen at the bottom of the window. 
 If this is not visible or you have 0 connections this may be a sign of a deeper issue, follow the steps below to troubleshoot.
 
-Check you're connected to the internet, this might seem obvious, but if your aren't connected to the internet than your walet will be unable to sync.
+Check you're connected to the internet, this might seem obvious, but if you aren't connected to the internet then your wallet will be unable to sync.
 
 You can try to add peers to your wallet manually by adding them to your config file, see [this guide](./manually-add-nodes-to-navcoin-core) for more information. 
 If this fails to increase your connection count try the next step. For more in
