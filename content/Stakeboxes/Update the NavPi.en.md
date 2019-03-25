@@ -1,5 +1,6 @@
 ---
 title: How to update the NavPi
+date: "2019-03-21"
 ---
 
 ### Updating the User Interface

@@ -8,4 +8,4 @@ This is the repo that builds into the NavCoin Knowledge Base. Feel free to make 
 
 ## Contributing 
 
-[Read this article](https://navcoin-knowledge-base.netlify.com/technical-support/contribute-to-the-knowledge-base/)
+[Read this article](https://navcoin-knowledge-base.netlify.com/general-support/contribute-to-the-knowledge-base/)

@@ -1,3 +1,4 @@
+
 ---
 title: How to locate your NavCoin data directory
 date: "2019-03-21"
@@ -25,5 +26,3 @@ The location of the data directory differs depending on your operating system. B
 ### Linux
 
 `~/.navcoin4/`
-
-

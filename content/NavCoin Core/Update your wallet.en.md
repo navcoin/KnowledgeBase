@@ -1,5 +1,5 @@
 ---
-title: How to update your wallet
+title: How to update your the NavCoin Core wallet
 date: "2019-03-21"
 ---
 

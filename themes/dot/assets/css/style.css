@@ -134,7 +134,7 @@ body {
 
 ol,
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   margin: 0px;
 }
 
@@ -175,7 +175,9 @@ select:focus {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
+.main-bg {
+  background: var(--primary-color);
+}
 .section-title {
   margin-bottom: 40px;
 }
@@ -519,12 +521,15 @@ ul {
   padding-left: 0;
   margin-bottom: 20px;
 }
+ul li, ol li  {
+  font-size: 16px;
+}
 
 ul li a {
-  color: var(--text-color-dark);
-  display: block;
-  font-size: 15px;
-  font-weight: 600;
+  /* color: var(--text-color-dark); */
+  /* display: block; */
+  font-size: 16px;
+  /* font-weight: 600; */
   padding: 10px 0;
 }
 
@@ -544,6 +549,10 @@ blockquote {
   font-weight: bold;
 }
 
+.list-styled  {
+  list-style-type: none;
+
+}
 .list-styled li {
   padding-left: 20px;
   position: relative;
