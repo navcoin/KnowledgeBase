@@ -6,6 +6,10 @@
 
 This is the repo that builds into the NavCoin Knowledge Base. Feel free to make PRs to add or improve content.
 
+## Requesting articles/changes to articles
+
+If you have an article request/idea or you've found an issue with an existing article, please [create an issue](https://github.com/NAVCoin/KnowledgeBase/issues/)
+
 ## Contributing 
 
 [Read this article](https://navcoin-knowledge-base.netlify.com/general-support/contribute-to-the-knowledge-base/)
