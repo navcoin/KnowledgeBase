@@ -1,3 +1,11 @@
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://navcoin-knowledge-base.netlify.com/*"
+  to = "https://info.navcoin.org/:splat"
+  status = 301
+  force = true
+ 
+
 [[redirects]]
   from = "https://info.navcoin.org/knowledge-base/how-to-bootstrap-your-core-wallet/"
   to = "https://info.navcoin.org/navcoin-core/bootstrap-your-wallet/"
