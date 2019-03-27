@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    {{- partial "head.html" . -}}
+    <body>
+        {{ if .IsHome }}
+        {{ "<!-- header -->" | safeHTML }}
+        <header class="hero-section overlay bg-cover banner" data-background="{{ .Site.Params.banner.image | absURL }}">
+            <div class="container mb-100">
+                {{ "<!-- navigation -->" | safeHTML }}
+                {{ partial "navigation.html" . }}
+                {{ "<!-- /navigation -->" | safeHTML }}
+            </div>
+        {{ partial "banner.html" . }}
+        </header>
+        {{ "<!-- /header -->" | safeHTML }}
+        {{ else }}
+        {{ "<!-- navigation -->" | safeHTML }}
+        <header class="sticky-top main-bg ">
+            <div class="container">
+                {{ partial "navigation.html" . }}
+            </div>
+        </header>
+        {{ "<!-- /navigation -->" | safeHTML }}
+        {{ end }}
+        <div id="content-404">
+          <h1>404 page not found</h1>
+
+          <p>It appears you've ended up on a page that doesn't exist.</p>
+          <p>You can report a missing pages or broken links <a href="https://github.com/navcoin/knowledgebase/issues" target="_blank">here</a>, by creating a new issue.</p>
+          <p>Otherwise click <a href="/">here</a> to return to the homepage.</p>
+                  </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

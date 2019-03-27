@@ -615,6 +615,13 @@ li.parent a {
 
 /* /single page */
 
+#content-404 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 /* elements */
 .elements .btn{
   margin: 10px;
