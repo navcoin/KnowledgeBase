@@ -10,6 +10,6 @@ After a short amount of time the private key will be imported into your wallet.
 
 ### Note
 
-Make sure you back up your wallet again after importing a private key, as your wallet cannot regenerate this key if you import and old wallet back up. See [this guide](/navcoin-core/encrypt-and-backup-your-wallet) for information on backing up your wallet.
+Make sure you back up your wallet again after importing a private key, as NavCoin Core cannot regenerate this key if you import an old wallet back up. See [this guide](/navcoin-core/encrypt-and-backup-your-wallet) for information on backing up your wallet.
 
 An alternative is to move the coins from the address into an address the wallet has generated.
