@@ -84,5 +84,5 @@ See the video below for an example.
 
 ### Import the keys into NavCoin Core
 
-If you wish to import the keys into NavCoin Core, follow [this guide]() for details.
+If you wish to import the keys into NavCoin Core, follow [this guide](/navcoin-core/import-private-key) for details.
 
