@@ -6,7 +6,8 @@ date: '2019-03-26'
 Open the NavCoin Core wallet, and in the toolbar, under `File`, click `Import Private Key`. A window will appear, paste the private key into here and click `OK`. 
 If your wallet is encrypted another window will appear and you will be asked to enter your wallet passphrase, enter it and click `OK`.
 
-After a short amount of time the private key will be imported into your wallet.
+The private key will be imported into your wallet, depending on the blockchain size, this can take a variable amount of time.
+
 
 ### Note
 
