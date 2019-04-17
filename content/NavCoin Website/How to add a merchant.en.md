@@ -48,7 +48,7 @@ Copy and paste one of the merchant shortcode blocks and replace the content with
 */>}}
 ```
 
-You'll need to add this block of code to of files found in this folder so it displays in all languages.
+You'll need to add this block of code to all of files found in this folder so it displays in all languages.
 
 ### Check it works
 
