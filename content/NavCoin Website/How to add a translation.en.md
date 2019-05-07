@@ -4,7 +4,7 @@ date: "2019-05-07"
 ---
 
 ### Create or Claim an issue
-If you want to contribute to the NavCoin site by adding a translation, create an issue on GitHub about outlining the work you will do and assign it to yourself. Or if there is already an existing issue you want to work on, claim it.
+If you want to contribute to the NavCoin.org by adding a translation, create an issue on GitHub about outlining the work you will do and assign it to yourself. Or if there is already an existing issue you want to work on, claim it.
 
 https://github.com/NAVCoin/navcoin-org/issues
 
