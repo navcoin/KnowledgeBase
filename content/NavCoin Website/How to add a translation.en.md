@@ -167,3 +167,7 @@ If you don't have hugo installed, check out https://gohugo.io for instructions o
 Using Git CLI or GitKraken, commit the changes and push them back up to your GitHub fork. Then through GitHub create a pull request to merge your branch back into the original NavCoin.org repository's master branch. You should see the branch build and get a preview link to check it all works properly.
 
 PR's require two positive reviews from collaborators before they can be merged. When you've submitted your PR for review, feel free to add some of the NavCoin core devs as reviewers and nudge them on Discord to review and merge it.
+
+### Help keep the site up to date
+
+Once your translation has been approved and merged to the main site we still need your help to maintain the translation. As new items are added to the roadmap, new merchants, new exchanges, new notices or other content changes occur we rely on our translators to help keep their version of the website up to date and accurate.
