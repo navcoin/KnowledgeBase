@@ -7,7 +7,7 @@ date: "2019-10-23"
 
 Redirecting your stakes means that when your address finds a block and is rewarded with the stake (2 NAV + transaction fee), you can choose to redirect part (or all) of the stake to one or many specified addresses. It can be your own addresses, anyone's address, or the community fund pool.
 
-### How do I set it up?
+### How to set it up?
 
 Once you open your core wallet, there are two ways to open up the setting window. You can either click the "SET UP STAKING REWARDS" button under the staking overview, or click the "settings" drop down and select "Set up staking rewards".
 
