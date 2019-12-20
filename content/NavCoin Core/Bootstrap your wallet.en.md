@@ -7,9 +7,9 @@ date: "2019-03-21"
 
 A boostrap for the wallet can be downloaded from:
 
-https://bootstrap.navcoin.org/bootstrap-navcoin_mainnet.tar
+https://bootstrap.navcoin.org/bootstrap-navcoin-4.7.2_mainnet.tar
 
-NOTE: this may take some time as the blockchain is around 2GB in size
+NOTE: this may take some time as the blockchain is around 4.7GB in size
 
 You simply need to replace the `chainstate` and `blocks` folders inside your NavCoin data directory with the ones from your bootstrap.
 
