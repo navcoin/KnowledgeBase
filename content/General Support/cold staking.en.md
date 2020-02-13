@@ -14,3 +14,4 @@ Now you can send your NAVs to your cold-staking address. Your spending address f
 
 After you send your coins to the cold-staking address, load your staking wallet with the mahcine you want to stake with (putting the wallet.dat file in the navcoin4 folder will do the trick). After syncing up, your cold-staking balance will be shown. Now turn on staking and enjoy staking with your spending wallet offline. And remember to vote on proposals and consultations with your staking wallet.
 
+A great way to utilize cold-staking is to use NavCash as your spending wallet. This allows you to use your NAV anytime you want without having to sync up.
