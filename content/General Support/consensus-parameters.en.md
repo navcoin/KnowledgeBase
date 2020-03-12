@@ -4,6 +4,8 @@ date: "2020-03-12"
 draft: false
 ---
 
+Consensus parameters are enforced on the whole network. Changes can be proposed by anyone. If a change passes the voting, the change will take effect on the first block of the next block cycle.
+
 Consensus parameter changes work very similarly to consultation with 2 differences. One, having multiple ansewrs is not a requirement. Two, the voting cycle could end earlier if the 75% of votes accept/reject the proposed change AFTER meeting the quorum requirement.
 
 The process can be broken down into 3 phases: support, reflection, and voting.
