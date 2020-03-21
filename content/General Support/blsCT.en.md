@@ -16,21 +16,21 @@ Confidential transactions is a cryptographic protocol which results in the amoun
 
 blsCT is the new privacy protocol that is currently being developed by NavCoin developers. It combines the benefits of BLS signatures and confidential transactions to provide NavCoin users adequate privacy when transacting NAV. blsCT is confidential , untraceable, and unlinkable. On top of providing sufficient privacy, blsCT trasactions are also fast to be created and scalable. 
 
-1.blsCT transactions are aggregatable
+1. blsCT transactions are aggregatable
 
-	a.Two blsCT transactions can be merged in one blsCT transaction.  
-	b. An observer can't tell if a transaction has been aggregated or not.  
-	c. Transactions can be aggregated infinite times.  
+   Two blsCT transactions can be merged in one blsCT transaction.  
+   An observer can't tell if a transaction has been aggregated or not.  
+   Transactions can be aggregated infinite times.  
 
-2.Aggregated blsCT transactions are good for privacy
+2. Aggregated blsCT transactions are good for privacy
 
    blsCT hides the transaction amounts. when two transactions are aggregated and their inputs are mixed, an observer can't tell which inputs pay which outputs!
 
-3.blsCT helps scalability
+3. blsCT helps scalability
 
    Only one signature is needed for each block, instead of needing one signature for each input.
 
-4.liquidity providers can earn money
+4. Liquidity providers can earn money
 
    Nodes can earn coins offering their coins for mixing participating in the aggregation market.
 
