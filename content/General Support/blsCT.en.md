@@ -32,6 +32,8 @@ blsCT is the new privacy protocol that is currently being developed by NavCoin d
 
 	Nodes can earn coins offering their coins for mixing participating in the aggregation market.
 
+Here is a simple diagram of how it works.
+
                          ~~~~ AGGREGATION MARKET ~~~~
                       
                                                                            
