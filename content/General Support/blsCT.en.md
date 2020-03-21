@@ -16,22 +16,22 @@ Confidential transactions is a cryptographic protocol which results in the amoun
 
 blsCT is the new privacy protocol that is currently being developed by NavCoin developers. It combines the benefits of BLS signatures and confidential transactions to provide NavCoin users adequate privacy when transacting NAV. blsCT is confidential , untraceable, and unlinkable. On top of providing sufficient privacy, blsCT trasactions are also fast to be created and scalable. 
 
-1. blsCT transactions are aggregatable
-    a. Two blsCT transactions can be merged in one blsCT transaction. 
-    b. An observer can't tell if a transaction has been aggregated or not. 
-    c. Transactions can be aggregated infinite times.
+1.	blsCT transactions are aggregatable
+	a.Two blsCT transactions can be merged in one blsCT transaction.  
+	b. An observer can't tell if a transaction has been aggregated or not.  
+	c. Transactions can be aggregated infinite times.  
 
-2. Aggregated blsCT transactions are good for privacy
+2.	Aggregated blsCT transactions are good for privacy
 
-blsCT hides the transaction amounts. when two transactions are aggregated and their inputs are mixed, an observer can't tell which inputs pay which outputs!
+ blsCT hides the transaction amounts. when two transactions are aggregated and their inputs are mixed, an observer can't tell which inputs pay which outputs!
 
-3. blsCT helps scalability
+3.	blsCT helps scalability
 
-Only one signature is needed for each block, instead of needing one signature for each input.
+ Only one signature is needed for each block, instead of needing one signature for each input.
 
-4. liquidity providers can earn money
+4.	liquidity providers can earn money
 
-Nodes can earn coins offering their coins for mixing participating in the aggregation market.
+ Nodes can earn coins offering their coins for mixing participating in the aggregation market.
 
                          ~~~~ AGGREGATION MARKET ~~~~
                       
@@ -155,52 +155,49 @@ Nodes can earn coins offering their coins for mixing participating in the aggreg
 
                     ~~~~ HOW DOES A TX LOOK LIKE ~~~~
 
-┌ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc┐
-│                                                                         │
-│             BLS signature - aggregation of the signatures:              │
-│                                                                         │
-│                                                                         │
-│                             for each input:                             │
-│                                                                         │
-│                Sign(prev output spending key, H(input))                 │
-│                                                                         │
-│                                                                         │
-│                            for each output:                             │
-│                                                                         │
-│                  Sign(output blinding key, H(output))                   │
-│                                                                         │
-│                                                                         │
-├────────────────────────────────────┬────────────────────────────────────┤
-│                                    │                                    │
-│                                    │                                    │
-│                                    │             BLS output             │
-│                                    │                                    │
-│                                    │   amount: 0xffffffff as a marker   │
-│                                    │    to show it is a bls output.     │
-│                                    │                                    │
-│                                    │    scriptPub: spending script.     │
-│                                    │       <TRUE> if no spending        │
-│                                    │            conditions.             │
-│                                    │                                    │
-│                                    │  blinding key: public key used to  │
-│                                    │   create a bls signature of the    │
-│                                    │  output and as ephemeral key for   │
-│             BLS input              │     creating a shared secret.      │
-│                                    │                                    │
-│     Same structure as a normal     │      spending key: public key      │
-│   input. It can only point to a    │    authorized to spend, derived    │
-│            BLS output.             │      using the shared secret.      │
-│                                    │                                    │
-│                                    │  encrypted data: amount, blinding  │
-│                                    │  factor and memo encrypted using   │
-│                                    │         the shared secret.         │
-│                                    │                                    │
-│                                    │    amount commitment: pedersen     │
-│                                    │  commitment to the output amount   │
-│                                    │       and a blinding factor.       │
-│                                    │                                    │
-│                                    │   range proof: proof that amount   │
-│                                    │            is positive.            │
-│                                    │                                    │
-│                                    │                                    │
-└ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc┘
+                                                                         
+             BLS signature - aggregation of the signatures:              
+                                                                         
+                                                                         
+                             for each input:                             
+                                                                         
+                Sign(prev output spending key, H(input))                 
+                                                                         
+                                                                         
+                            for each output:                             
+                                                                         
+                  Sign(output blinding key, H(output))                   
+                                                                         
+                                                                         
+                                    │                                    
+                                    │                                    
+                                    │             BLS output             
+                                    │                                    
+                                    │   amount: 0xffffffff as a marker   
+                                    │    to show it is a bls output.     
+                                    │                                    
+                                    │    scriptPub: spending script.     
+                                    │       <TRUE> if no spending        
+                                    │            conditions.             
+                                    │                                    
+                                    │  blinding key: public key used to  
+                                    │   create a bls signature of the    
+                                    │  output and as ephemeral key for   
+             BLS input              │     creating a shared secret.      
+                                    │                                    
+     Same structure as a normal     │      spending key: public key      
+   input. It can only point to a    │    authorized to spend, derived    
+            BLS output.             │      using the shared secret.      
+                                    │                                    
+                                    │  encrypted data: amount, blinding  
+                                    │  factor and memo encrypted using   
+                                    │         the shared secret.         
+                                    │                                    
+                                    │    amount commitment: pedersen     
+                                    │  commitment to the output amount   
+                                    │       and a blinding factor.       
+                                    │                                    
+                                    │   range proof: proof that amount   
+                                    │            is positive.            
+                                    │                                    
+                                    │                                    
