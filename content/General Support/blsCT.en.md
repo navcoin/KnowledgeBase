@@ -6,7 +6,7 @@ draft: false
 
 ### Boneh-Lynn-Shacham (BLS) Signatures
 
-BLS signatures was introduced in 2001. It enables compressions of a group of signatures into a compact signature that can be used to autheticate the entire group. This meanse that all transactions in a block can be combined to 1 transaction with 1 signature, greatly improves the bandwith, storage, verification speed, and privacy. 
+BLS signatures was introduced in 2001. It enables compressions of a group of signatures into a compact signature that can be used to authenticate the entire group. This means that all transactions in a block can be combined to 1 transaction with 1 signature, greatly improving the bandwith, storage, verification speed, and privacy. 
 
 ### Confidential Transactions (CT)
 
@@ -14,25 +14,23 @@ Confidential transactions is a cryptographic protocol which results in the amoun
 
 ### What is blsCT
 
-blsCT is the new privacy protocol that is currently being developed by NavCoin developers. It combines the benefits of BLS signatures and confidential transactions to provide NavCoin users adequate privacy when transacting NAV. blsCT is confidential , untraceable, and unlinkable. On top of providing sufficient privacy, blsCT trasactions are also fast to be created and scalable. 
+blsCT is the new privacy protocol that is currently being developed by NavCoin developers. It combines the benefits of BLS signatures and confidential transactions to provide NavCoin users adequate privacy when transacting NAV. blsCT is confidential , untraceable, and unlinkable. On top of providing sufficient privacy, blsCT trasactions are also fast to create and scalable. 
 
 1. blsCT transactions are aggregatable
-
-   Two blsCT transactions can be merged in one blsCT transaction.  
-   An observer can't tell if a transaction has been aggregated or not.  
-   Transactions can be aggregated infinite times.  
-
+    1. Two blsCT transactions can be merged in one blsCT transaction.
+    2. An observer can't tell if a transaction has been aggregated or not.
+    3. Transactions can be aggregated infinite times.
 2. Aggregated blsCT transactions are good for privacy
 
-   blsCT hides the transaction amounts. when two transactions are aggregated and their inputs are mixed, an observer can't tell which inputs pay which outputs!
+	blsCT hides the transaction amounts. when two transactions are aggregated and their inputs are mixed, an observer can't tell which inputs pay which outputs!
 
 3. blsCT helps scalability
 
-   Only one signature is needed for each block, instead of needing one signature for each input.
+	Only one signature is needed for each block, instead of needing one signature for each input.
 
 4. Liquidity providers can earn money
 
-   Nodes can earn coins offering their coins for mixing participating in the aggregation market.
+	Nodes can earn coins offering their coins for mixing participating in the aggregation market.
 
                          ~~~~ AGGREGATION MARKET ~~~~
                       
