@@ -10,6 +10,6 @@ NavCoin was created on 2014 with no pre-mine or ICO. With block time of 30 secon
 
 NavCoin's decentralized autonomous organization (DAO) enables the community to be self-funded through community fund, self-guided through consultations, and self-governed through conesensus changes. Users can participate DAO through staking. Each stake is equal to one vote. 
 
-NavCoin is a privacy coin. Previous privacy protocol has been disabled for an upgrade in September 2018. The protocol to implement, ZeroCT, was again cancelled in early 2019 due to the bug in zerocoin protocol. The developers are currently working on a new privacy protocol, blsCT, which will be confidential, untraceable, unlinkable. 
+NavCoin strives to provide adequate privacy to users. Previous privacy protocol has been disabled for an upgrade in September 2018 due to lack of adequate privacy. The protocol to implement, ZeroCT, was again cancelled in early 2019 due to the bug in zerocoin protocol. The developers are currently working on a new privacy protocol, blsCT, which will be confidential, untraceable, unlinkable. 
 
 NavCoin has implemented many features on top of the core wallet. These include cold-staking, open-alias, dandelion++, NavCash, NavPool, NEXT wallets, and mobile wallets, many of which are fully funded through NavCoin's DAO system.

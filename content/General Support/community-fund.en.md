@@ -4,6 +4,8 @@ date: "2020-03-12"
 draft: false
 ---
 
+NavCoin's community funding comes from the 20% donation of each 2.50 block reward defined in the consenesus parameter "Percentage of generated NAV going to the Fund".
+
 The process can be broken down into 4 steps: submit proposals, vote on proposals, submit payment requests, vote on payment requests. Creating proposals and payment requests may require fees specified in the netowrk consensus "Minimum fee to submit a fund proposal" and "Minimum fee to submit a payment request. 
 
 The voting process length is defined in the consensus parameter "Maximum of voting cycles for fund proposal votings" and "Maximum of voting cycles for payment request votings". The length of a cycle is defined in "Length in blocks of a voting cycle".
