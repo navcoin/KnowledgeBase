@@ -8,9 +8,9 @@ A decentralized autonomous organization (DAO) is an organization represented by 
 
 1. Community Funding System
 The community funding system aims at creating a decentralized funding system where anyone in the world can submit proposals. The proposals will then be voted on by the network. Once accepted, the requested funds will be locked up for the proposal. Payment requests can then be submitted to release the funds in small portions or all at once. This funding system is unique in many ways:
-    a. It is decentralized: 
+    1. Decentralized: 
     There is no "dev team" or anyone controlling the funds. The only way to get access to the funds is through network consensus. There is also no limitation to who can vote. Anyone owning NAV and staking has the ability to vote. When a block is staked, the staker will cast the vote. There is no minimum staking amount requirement or masternodes for NavCoin. You stake, you vote.
-    b. It is dual-consensus: 
+    2. Two rounds of voting: 
     The network will have to reach consensus for accepting the proposal and paying the proposal, hence called dual-consensus. There can be multiple payments. In fact, it is encouraged that the proposer schedule out payment requests with milestones in the original proposal so the community can assess the work done and release the payment accordingly. This system protects both the proposer and the community. It prevents an awkward situation where either the proposer has to complete all his/her work before asking for funding. Or, the community has to trust that the proposer will complete the work as promised and pay upfront.
 		
 2. Consultation System:
