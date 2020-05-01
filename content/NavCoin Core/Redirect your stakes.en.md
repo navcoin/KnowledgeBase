@@ -1,5 +1,5 @@
 ---
-title: How to redirect your stakes
+title: How to Redirect Your Stakes
 date: "2019-10-23"
 ---
 
