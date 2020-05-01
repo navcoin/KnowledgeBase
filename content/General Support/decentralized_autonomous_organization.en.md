@@ -1,5 +1,5 @@
 ---
-title: What is Decentralized Autonomous Organization (DAO)
+title: What is Decentralized Autonomous Organization (DAO)?
 date: "2020-03-12"
 draft: false
 ---
