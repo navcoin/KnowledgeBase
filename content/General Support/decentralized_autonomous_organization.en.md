@@ -18,7 +18,7 @@ The community funding system aims at creating a decentralized funding system whe
     Besides that, there are many other use cases for consultations. Stakers can create polls of which privacy protocol to implement or predictions of how much bitcoin will worth in 10 years. One can say consultations are providing directions that the community decides as a whole and follow as a whole.
 	
 3. Consensus Parameter Changing System:
-    Historically speaking, network consensus parameters are slow to change due to two main reasons. One, it requires deep understanding of the code to ensure nothing breaks. Two, the changes are a yes/no questions. You either support the changes or not. With DAO, any community member can start many consensus changes at the same time with various values. For example, one can propose to change the rewards per block to 1 NAV, 5 NAV, and 10 NAV at the same time and let the community choose from on of them, all without any involvement from developers.
+    Historically speaking, network consensus parameters are slow to change due to two main reasons. One, it requires deep understanding of the code to ensure nothing breaks. Two, the changes are a yes/no questions. You either support the changes or not. With DAO, any community member can start many consensus changes at the same time with various values. For example, one can propose to change the rewards per block to 1 NAV, 5 NAV, and 10 NAV at the same time and let the community choose. And the entire process can be done without any involvement from developers.
 	
 With these systems, NavCoin's DAO allows the community to be funded for work, guided by community's own directions , and able to change network parameters without developers' involvement. 
 
