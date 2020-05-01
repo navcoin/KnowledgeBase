@@ -15,7 +15,7 @@ The community funding system aims at creating a decentralized funding system whe
 		
 2. Consultation System:
     The consultation system is created to gauge the community sentiment on any topics. The most obvious benefit is that when new features are introduced to NavCoin, the community used to have to vote on soft forks to activate said features. With the consultation system, developers can easily communicate with the community to see if new features will be accepted even before they are worked on.
-    Besides that, there are many other use cases for consultations. Stakers can create polls of which privacy protocol to implement or predictions of how much bitcoin will worth in 10 years. One can say consultations are providing directions that the community decides as a whole and follow as a whole.
+    Besides that, there are many other use cases for consultations. Stakers can create polls of which privacy protocol to implement or predictions of how much bitcoin will be worth in 10 years. One can say consultations are providing directions that the community decides as a whole and follow as a whole.
 	
 3. Consensus Parameter Changing System:
     Historically speaking, network consensus parameters are slow to change due to two main reasons. One, it requires deep understanding of the code to ensure nothing breaks. Two, the changes are a yes/no questions. You either support the changes or not. With DAO, any community member can start many consensus changes at the same time with various values. For example, one can propose to change the rewards per block to 1 NAV, 5 NAV, and 10 NAV at the same time and let the community choose. And the entire process can be done without any involvement from developers.
