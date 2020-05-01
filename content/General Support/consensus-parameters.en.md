@@ -1,5 +1,5 @@
 ---
-title: How do consensus parameters work?
+title: How do Consensus Parameters Work?
 date: "2020-03-12"
 draft: false
 ---
@@ -18,4 +18,3 @@ The length of this phase is defined in the consensus parameter "Length in cycles
 
 3. Voting Phase:
 The length of this phase is defined in the consensus parameter "Length in cycels for consultation votings". Votes will be reset at each cycle. After the last cycle ends, the votes will be locked in and stored in the blockchain for future reference. 
-
