@@ -19,4 +19,4 @@ You will be prompted with two important values when it’s finished: your stakin
 
 When you launch NavCash for the first time, you will be asked about which server you want to connect. You can then input the server information to let NavCash connect to your own server.
 
-For more information on the setup and how NavCash works, please checkout [this medium article](https://medium.com/@NAVCoin/navcoin-the-ultimate-guide-to-staking-its-never-been-so-easy-c0ef2f9983c8).
+For more information on the setup and how NavCash works, please check out this medium [article](https://medium.com/@NAVCoin/navcoin-the-ultimate-guide-to-staking-its-never-been-so-easy-c0ef2f9983c8).
