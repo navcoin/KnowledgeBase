@@ -2,6 +2,7 @@
 title: How do Consensus Parameters Work?
 date: "2020-03-12"
 draft: false
+order: "040"
 ---
 
 Consensus parameters are enforced on the whole network. Changes can be proposed by anyone. If a change passes the voting, the change will take effect on the first block of the next block cycle.

@@ -2,6 +2,7 @@
 title: How does Community Funding Work?
 date: "2020-03-12"
 draft: false
+order: "020"
 ---
 
 NavCoin's community funding comes from the 20% donation of each 2.50 block reward defined in the consensus parameter "Percentage of generated NAV going to the Fund".

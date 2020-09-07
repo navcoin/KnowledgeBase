@@ -55,7 +55,7 @@
               <h4 class="mb-4">{{ .Title }}</h4>
             </a>
             <ul class="list-styled">
-              {{ range .Data.Pages }}
+              {{ range .Data.Pages.ByParam "order" }}
               <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
               {{ end }}
             </ul>
@@ -70,7 +70,7 @@
                   {{else}}
                   <h3 class="mt-0">Articles</h3>
                   <ul class="list-unstyled">
-                    {{ range .Data.Pages }}
+                    {{ range .Data.Pages.ByParam "order" }}
                     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                     {{ end }}
                   </ul>

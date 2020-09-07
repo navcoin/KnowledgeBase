@@ -1,6 +1,7 @@
 ---
 title: Why am I missing coins sent to an exchange?
 date: "2019-03-21"
+order: "070"
 ---
 
 ### Sending to exchanges

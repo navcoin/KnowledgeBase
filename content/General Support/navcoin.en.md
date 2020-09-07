@@ -2,6 +2,7 @@
 title: What is NavCoin?
 date: "2020-03-16"
 draft: false
+order: "000"
 ---
 
 NavCoin is a tool for transfer of value. It is open-source with no central authority. Every transaction is  peer to peer. You have total control of your coins.

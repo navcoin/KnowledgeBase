@@ -1,6 +1,7 @@
 ---
 title: "How to contribute to the NavCoin Knowledge Base"
 date: "2019-03-21"
+order: "090"
 ---
 
 ### Proofread articles and give feedback

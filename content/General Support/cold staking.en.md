@@ -1,7 +1,8 @@
 ---
-title: Cold-Staking
+title: What is Cold-Staking?
 date: "2020-02-13"
 draft: false
+order: "050"
 ---
 
 Cold-staking means that your wallet is not online staking and subject to attacks. Instead, a staking wallet which contains no NAV will be staking on behalf of your spending wallet which holds your NAV. Bear in mind that you still need a node actively staking ideally 24/7 to get your staking rewards.
