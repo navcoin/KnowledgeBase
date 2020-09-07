@@ -5,4 +5,8 @@ draft: false
 order: "010"
 ---
 
-NavCash is a light wallet for NavCoin. Its main features are Ledger and Cold Staking support and that it does not need to keep a full copy of the blockchain in order to operate. Instead, it relies on electrum servers to subscribe to notifications related to the wallet. 
+NavCash can be downloaded from the [NavCoin website](https://navcoin.org/en/wallets/). After the App is downloaded, simply follow the wizard to finish the installation.
+
+To use NavCash with Ledger Nano S, and app loaded is needed to be manually installed on Ledger since the Ledger App is still being reviewed by the Ledger team. The loader can be found in the link for the NavCash wallet.
+
+Ledger Nano X is not supported at the moment since it does not allow 3rd party App.
