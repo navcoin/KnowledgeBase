@@ -1,6 +1,7 @@
 ---
 title: "How to open the firewall ports for NavCoin Wallets"
 draft: true
+order: "100"
 ---
 
 

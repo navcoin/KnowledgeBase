@@ -2,6 +2,7 @@
 title: What is Decentralized Autonomous Organization (DAO)?
 date: "2020-03-12"
 draft: false
+order: "010"
 ---
 
 A decentralized autonomous organization (DAO) is an organization represented by rules encoded as a computer program that is transparent, controlled by shareholders and not influenced by a central government. NavCoin's DAO intend to achieve this with three major features:
