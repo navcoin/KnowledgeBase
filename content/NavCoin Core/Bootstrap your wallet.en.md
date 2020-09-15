@@ -1,6 +1,7 @@
 ---
-title: How to bootstrap your wallet
-date: "2019-03-21"
+title: How to bootstrap your wallet?
+date: "2019-09-14"
+order: "030"
 ---
 
 ### Bootstrap

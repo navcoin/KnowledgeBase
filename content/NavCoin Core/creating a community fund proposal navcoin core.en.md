@@ -1,7 +1,8 @@
 ---
 date: "2019-03-18"
-title: "Creating a Community Fund proposal using NavCoin Core"
+title: "How to create a Community Fund proposal using NavCoin Core?"
 draft: false
+order: "110"
 ---
 
 ### Generate the proposal command

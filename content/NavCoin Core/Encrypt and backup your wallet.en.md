@@ -1,6 +1,7 @@
 ---
-title: How to encrypt and back up your wallet
-date: "2019-03-21"
+title: How to encrypt and back up your wallet?
+date: "2020-09-14"
+order: "010"
 ---
 
 ### Before encrypting your wallet

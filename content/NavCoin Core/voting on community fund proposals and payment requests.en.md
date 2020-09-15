@@ -1,6 +1,7 @@
 ---
-title: "How to vote on Community Fund Proposals and Payment Requests with the NavCoin Core Wallet"
+title: "How to vote on Community Fund Proposals and Payment Requests with the NavCoin Core Wallet?"
 date: "2019-03-21"
+draft: true
 ---
 
 Inside the NavCoin Core wallet, in the toolbar under `Community Fund` you can either click `Vote for Proposals` or `Vote for Payment Requests`.

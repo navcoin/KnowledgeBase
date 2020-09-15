@@ -1,6 +1,7 @@
 ---
-title: How to Redirect Your Stakes?
-date: "2019-10-23"
+title: How to redirect your stakes?
+date: "2020-09-14"
+order: "090"
 ---
 
 ### What does redirecting your stakes mean?
