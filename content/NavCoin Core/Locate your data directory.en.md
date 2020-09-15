@@ -1,7 +1,7 @@
 
 ---
 title: How to locate your NavCoin data directory?
-date: "2019-09-14"
+date: "2020-09-14"
 order: "040"
 ---
 

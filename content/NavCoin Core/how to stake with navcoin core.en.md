@@ -1,6 +1,6 @@
 ---
 title: How to stake with the NavCoin Core Wallet?
-date: "2019-09-14"
+date: "2020-09-14"
 order: "020"
 ---
 

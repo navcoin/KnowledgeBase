@@ -1,5 +1,5 @@
 ---
-date: "2019-03-18"
+date: "2020-09-14"
 title: "How to create a Community Fund proposal using NavCoin Core?"
 draft: false
 order: "110"

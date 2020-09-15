@@ -1,6 +1,6 @@
 ---
 title: How to fix balance and syncing issues with the NavCoin Core wallet?
-date: "2019-09-14"
+date: "2020-09-14"
 order: "100"
 ---
 ### Make sure your wallet is on the latest version
