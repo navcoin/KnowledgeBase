@@ -8,7 +8,7 @@ order: "000"
 
 If you would like to install the client using pre-built binaries for your system, please visit [NavCoin.org](https://navcoin.org/en/wallets/#download-core)
 
-### Building your own client For Linux
+### Building in Linux
 
 This guide has only been tested on Ubuntu 20.04.
 
@@ -38,3 +38,28 @@ cd ./depends && make -j$(nproc) && cd .. && ./autogen.sh && ./configure --prefix
 
 Once the build finishes, you can launch the daemon with `./src/navcoind` or the Qt wallet with `./src/qt/navcoin-qt`
 
+### Building for OSX
+
+Install essential packages before building from source
+
+```
+brew install automake berkeley-db4 libtool boost --c++11 miniupnpc openssl pkg-config homebrew/core/protobuf260 --c++11 qt5 libevent curl
+```
+
+lone the repo
+
+```
+git clone https://github.com/navcoin/navcoin-core.git
+```
+
+Change directory to the repo
+
+```
+cd navcoin-core
+```
+
+Build the depends and the source code
+
+```
+cd ./depends && make -j$(nproc) && cd .. && ./autogen.sh && ./configure --prefix=`pwd`/depends/`uname -m`-pc-linux-gnu && make -j$(nproc) &
+```
