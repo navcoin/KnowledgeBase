@@ -33,10 +33,8 @@ cd navcoin-core
 Build the depends and the source code
 
 ```
-cd ./depends && make -j4 && cd .. && ./autogen.sh && ./configure --prefix=`pwd`/depends/`uname -m`-pc-linux-gnu && make -j4 &
+cd ./depends && make -j$(nproc) && cd .. && ./autogen.sh && ./configure --prefix=`pwd`/depends/`uname -m`-pc-linux-gnu && make -j$(nproc) &
 ```
-
-You can increase the nodes count to compile the code faster by changing `-j4` to higher counts that your CPU is capable of like `-j12`.
 
 Once the build finishes, you can launch the daemon with `./src/navcoind` or the Qt wallet with `./src/qt/navcoin-qt`
 
