@@ -10,6 +10,8 @@ If you would like to install the client using pre-built binaries for your system
 
 ### Building your own client For Linux
 
+This guide has only been tested on Ubuntu 20.04.
+
 Install essential packages before building from source
 
 ```
