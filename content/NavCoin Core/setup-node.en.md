@@ -38,7 +38,7 @@ cd ./depends && make -j$(nproc) && cd .. && ./autogen.sh && ./configure --prefix
 
 Once the build finishes, you can launch the daemon with `./src/navcoind` or the Qt wallet with `./src/qt/navcoin-qt`
 
-### Building for OSX
+### Building in OSX
 
 Install essential packages before building from source
 
@@ -63,3 +63,11 @@ Build the depends and the source code
 ```
 cd ./depends && make -j$(nproc) && cd .. && ./autogen.sh && ./configure --prefix=`pwd`/depends/`uname -m`-pc-linux-gnu && make -j$(nproc) &
 ```
+
+### Bulding for Windows 10
+
+You can install Ubuntu from Windows Store 
+
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+After Ubuntu is installed, follow the guide for building in Linux
