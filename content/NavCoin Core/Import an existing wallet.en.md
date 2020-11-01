@@ -1,6 +1,7 @@
 ---
-title: How to restore your NavCoin Core wallet from a backup
-date: "2019-03-21"
+title: How to restore your NavCoin Core wallet from a backup?
+date: "2020-09-14"
+order: "060"
 ---
 
 ### Preperation

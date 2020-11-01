@@ -1,6 +1,7 @@
 ---
-title: Manually add peer nodes to NavCoin Core
-date: '2019-03-24'
+title: How to manually add peer nodes to NavCoin Core?
+date: '2020-09-14'
+order: "050"
 ---
 We will be modifing your wallet's configuration file, so first locate your NavCoin data directory, you can find it by following [this guide](./locate-your-data-directory).
 

@@ -1,6 +1,7 @@
 ---
-title: How to stake with the NavCoin Core Wallet
-date: "2019-03-21"
+title: How to stake with the NavCoin Core Wallet?
+date: "2020-09-14"
+order: "020"
 ---
 
 Your wallet must be open and 'unlocked for staking' in order to begin staking. This means your computer must be turned on and the wallet must be open.
@@ -12,9 +13,7 @@ In the wallet software, in the toolbar, click `Settings` and then `Unlock wallet
 
 Your wallet is now unlocked for staking.
 
-Alternatively, there is a small lock icon next to the word 'STAKING' in the Home screen of the wallet. Click this lock and you will get the password prompt mentioned above.
-
-See the image below for reference.
+The image below shows the wallet is unlocked for staking.
 
 ![](/images/staking-guide.png)
 

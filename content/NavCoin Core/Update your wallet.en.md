@@ -1,6 +1,7 @@
 ---
-title: How to update your the NavCoin Core wallet
-date: "2019-03-21"
+title: How to update your the NavCoin Core wallet?
+date: "2020-09-14"
+order: "080"
 ---
 
 ### Download the latest wallet version
