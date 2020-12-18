@@ -1,5 +1,5 @@
 ---
-title: How to update your the NavCoin Core wallet?
+title: How to update your NavCoin Core wallet?
 date: "2020-09-14"
 order: "080"
 ---
