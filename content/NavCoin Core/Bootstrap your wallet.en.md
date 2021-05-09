@@ -8,7 +8,7 @@ order: "030"
 
 A boostrap for the wallet can be downloaded from:
 
-http://ds1.nav.community/bootstrap.tar.gz
+https://bootstrap.nav.community/bootstrap.tar.gz
 
 NOTE: this may take some time as the blockchain is around 4.7GB in size
 
