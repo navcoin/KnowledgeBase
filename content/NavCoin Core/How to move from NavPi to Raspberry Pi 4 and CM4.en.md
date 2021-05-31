@@ -7,23 +7,23 @@ order: "000"
 
 # Moving from NavPi to headless Raspberry Pi Compute Module 4 for staking
 
-Managing the NavPi through its GUI made managing and staking Navcoin a very simple process. Wanting to use the latest navcore 6.X and moving to a more up-to-date and powerful made staking a little but more commandline heavy due to the missing GUI component when wanting to stake on a Pi remotely. 
+Managing the NavPi through its GUI made managing and staking Navcoin a very simple process. Wanting to use the latest navcore 6.X and moving to a more up-to-date and powerful Raspberry Pi platform made staking more commandline heavy due to the missing GUI component when wanting to stake on a Pi remotely. 
 
-Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x and in  to stake Navcoins in a headless fashion.
+Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x to stake Navcoins headless on the Pi.
 
-**Disclaimer**: This was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel
-                This may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
+**Disclaimer**: This how to was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel. It may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
 
 **Special Thanks to `@salmonskinroll` and `@aguycalled` as well as `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>)**
 
-This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/)
+This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/).
 
 1. Assumption is you have a running CM4 (how to can be found [here](https://www.youtube.com/watch?reload=9&v=jp_mF1RknU4)) and ssh access to it
+
 
    **Notes**:
 
 - I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
-- I also am utilizing the screen window session manager to keep things running in case you get disconnected (https://www.youtube.com/watch?v=hB6Y72DK8mc)
+- I also am utilizing the `screen` window session manager to keep things running in case you get disconnected. [Here is a quick intro on how to use `screen`](https://www.youtube.com/watch?v=hB6Y72DK8mc)
 
 ```
 pi@raspberrypi:~ $ screen
@@ -90,18 +90,18 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoind -t -daemon -datadir=/home/pi/.nacv
 
 **Notes**: 
 
-- The `-upgradewallet` is only required the first time you run `navcoind` after you imported your `wallet.dat` file from the NavPi (see step 5) adding the `&` at the end of the command let's the command run in the background - you can bring the command back to the foreground by running `fg %1`
+- `{IP address}` refers to the IP address of your Raspberry Pi on your network.
+- The `-upgradewallet` is only required the first time you run `navcoind` after you imported your `wallet.dat` file from the NavPi (see step 5) adding the `&` at the end of the command lets the command run in the background - you can bring the command back to the foreground by running `fg %1`. More info on using bash jobs can be found [here](https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need)
 - I am not sure what the `-t` option is and does but I saw it somewhere used and it is not throwing an error so I left it in.
+- I believe a lot of the options and toggles for the navcoin daemon can be added to the `navcoin.conf` file in the `~\.navcoin4\` directory.
 
-More info on using bash jobs can be found [here](https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need)
-
-The navoin core daemon should now start in the background running a navcore client command will display the progress until it executes correctly displaying information.
+The navcoin core daemon should now start in the background. Running a navcore client command will display the progress until the daemon is fully loaded and the navcoin client query executes correctly displaying information.
 
 ```
 pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getinfo
 ```
 
-When the navcoin daemon is completely loaded to `getinfo` command should display as follows:
+When the navcoin daemon is completely loaded the `getinfo` command should display as follows:
 
 ```
 pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getinfo
@@ -167,7 +167,7 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getstakinginfo
 }
 ```
 
-When you see `true` for both enabled ad staking you are good to go.
+When you see `true` for both enabled and staking you are staking Navcoin and good to go!!!
 
 #### Additional Notes
 
