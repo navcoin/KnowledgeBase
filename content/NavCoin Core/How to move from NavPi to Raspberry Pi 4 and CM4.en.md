@@ -9,7 +9,7 @@ order: "000"
 
 Managing the NavPi through its GUI made managing and staking Navcoin a very simple process. Wanting to use the latest navcore 6.X and moving to a more up-to-date and powerful made staking a little but more commandline heavy due to the missing GUI component when wanting to stake on a Pi remotely. 
 
-Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x and in  to stake Navcoins in a headless fasion.
+Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x and in  to stake Navcoins in a headless fashion.
 
 **Disclaimer**: This was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel
                 This may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
@@ -23,26 +23,31 @@ This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry
    **Notes**: - I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
           - I also am utilizing the screen window session manager to keep things running in case you get disconnected (https://www.youtube.com/watch?v=hB6Y72DK8mc)
 
-	    ```
-            pi@raspberrypi:~ $ screen
-            ```
+```
+pi@raspberrypi:~ $ screen
+```
 
-            Note: When reconnecting to the Raspberry Pi remotely re-connect to the still running window session(s)
+**Note**: When reconnecting to the Raspberry Pi remotely re-connect to the still running window session(s)
 
-	    ```
-	    pi@raspberrypi:~ $ screen -x
-	    ```
+```
+pi@raspberrypi:~ $ screen -x
+```
 
           - I am performing all commands from the /home/pi directory
           - At time of writing the latest version of navcoin was 6.1.0
+
 2. Get the latest Navcoin files from here https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
+
 ```
 pi@raspberrypi:~ $ wget https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
 ```
+
 3. Once downloaded untar the tarball file 
+
 ```
 pi@raspberrypi:~ $ tar -zxvf navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
 ```
+
 4. Bootstrap you wallet
 
 ##### What is “Bootstrapping”? 
@@ -58,9 +63,11 @@ Now we download the pre-synched bloackchain inside the .navcoin4 data directory
 pi@raspberrypi:~ $ cd .navcoin4
 pi@raspberrypi:~/.navcoin4 $ wget https://bootstrap.nav.community/bootstrap.tar.gz
 ```
-NOTE: this may take some time as this file is around 3.3GB in size
+
+**Note**: this may take some time as this file is around 3.3GB in size
 
 Then we untar the blockchain tarball
+
 ```
 pi@raspberrypi:~/.navcoin4 $  tar -zxvf bootstrap.tar.gz
 ```
@@ -73,14 +80,15 @@ There are several ways of doing this
 - via SSD card moving the SSD from the old NavPi to the new Raspberry Pi and copying the `wallet.dat` file from there to `~/.navcoin4/`
 
 6. Return to the home folder and start the navcoin server
+
 ```
 pi@raspberrypi:~/.navcoin4 $ cd ~
 pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoind -t -daemon -datadir=/home/pi/.nacvoin4 -staking=1 -externalip={IP address} -upnp=0 -rpcbind=127.0.0.1 -rpcallowip=127.0.0.1 -rpcuser=test -rpcpassword=test -upgradewallet &
 ```
 
-Note: The `-upgradewallet` is only required the first time you run `navcoind` after you imported your `wallet.dat` file from the NavPi (see step 5)
-      adding the `&` at the end of the command let's the command run in the background - you can bring the command back to the foreground by running `fg %1`
-      More info on using bash jobs can be found [here](https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need)
+**Note**: The `-upgradewallet` is only required the first time you run `navcoind` after you imported your `wallet.dat` file from the NavPi (see step 5) adding the `&` at the end of the command let's the command run in the background - you can bring the command back to the foreground by running `fg %1`
+
+More info on using bash jobs can be found [here](https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need)
 
 The navoin core daemon should now start in the background running a navcore client command will display the progress until it executes correctly displaying information.
 
@@ -89,6 +97,7 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getinfo
 ```
 
 When the navcoin daemon is completely loaded to `getinfo` command should display as follows:
+
 ```
 pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getinfo
 {
@@ -125,11 +134,12 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getinfo
 7. Unlock your wallet for staking
 
 To unlock your wallet for staking run the following 
+
 ```
 pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli walletpassphrase 'XXXXXX' 999999 true
 ```
 
-Note: Your wallet password will be stored by bash in your bash history. Run the `history` command and delete the line containing your wallet password with `history -d XXX` where `XXX` is the number of the history line that is being displayed when running the `history` command.
+**Note**: Your wallet password will be stored by bash in your bash history. Run the `history` command and delete the line containing your wallet password with `history -d XXX` where `XXX` is the number of the history line that is being displayed when running the `history` command.
 
 8. Check that you are staking
 
@@ -154,6 +164,12 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getstakinginfo
 
 When you see `true` for both enabled ad staking you are good to go.
 
-Note: If for some reason troubleshooting of the wallet via GUI is required the qt based GUI can be remotely accessed by running an Xserver on either the remote Linx/Windows/MAC machine. 
+**Note**: If for some reason troubleshooting of the wallet via GUI is required the qt based GUI can be remotely accessed by running an Xserver on either the remote Linx/Windows/MAC machine. 
+
+I was using [MobaXterm](https://mobaxterm.mobatek.net/) and had to use the following command to be able to start `navcoin-qt` remotely.
+
+```
+pi@raspberrypi:~ $ sudo apt-get install libfontconfig1
+```
 
 **It should be mentioned that that the remote qt X session will get disconnected/stopped when the ssh server connection is closed.**
