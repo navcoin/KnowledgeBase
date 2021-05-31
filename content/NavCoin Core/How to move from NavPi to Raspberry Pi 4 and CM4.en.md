@@ -11,12 +11,12 @@ Managing the NavPi through its GUI made managing and staking Navcoin a very simp
 
 Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x and in  to stake Navcoins in a headless fasion.
 
-# Disclaimer: This was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel
-#            This may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
+**Disclaimer**: This was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel
+                This may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
 
-# Special Thanks to @salmonskinroll and @aguycalled as well as u/Zane_TLI on Reddit for this post https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>
+**Special Thanks to @salmonskinroll and `@aguycalled` as well as `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>)**
 
-This how to is using the CM4 CM4104032 (https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/)
+This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/)
 
 1. Assumption is you have a running CM4 (how to can be found here https://www.youtube.com/watch?reload=9&v=jp_mF1RknU4) and ssh access to it
    Notes: - I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
@@ -44,7 +44,7 @@ pi@raspberrypi:~ $ tar -zxvf navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
 ```
 4. Bootstrap you wallet
 
-## What is “Bootstrapping”? 
+##### What is “Bootstrapping”? 
 
 Bootstrapping is the process of adding a pre-synced blockchain from a trusted source to your wallet, allowing you to skip part or all of the blockchain syncing process. see [this article](/navcoin-core/bootstrap-your-wallet/)
 
@@ -155,4 +155,4 @@ When you see `true` for both enabled ad staking you are good to go.
 
 Note: If for some reason troubleshooting of the wallet via GUI is required the qt based GUI can be remotely accessed by running an Xserver on either the remote Linx/Windows/MAC machine. 
 
-# It should be nentioned that that the remote qt X session will get disconnected/stopped when the ssh server connection is closed.  
+**It should be mentioned that that the remote qt X session will get disconnected/stopped when the ssh server connection is closed.**
