@@ -18,7 +18,7 @@ Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi 
 
 This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/)
 
-1. Assumption is you have a running CM4 (how to can be found here https://www.youtube.com/watch?reload=9&v=jp_mF1RknU4) and ssh access to it
+1. Assumption is you have a running CM4 (how to can be found [here](https://www.youtube.com/watch?reload=9&v=jp_mF1RknU4)) and ssh access to it
 
    **Notes**:
 
@@ -38,7 +38,7 @@ pi@raspberrypi:~ $ screen -x
           - I am performing all commands from the /home/pi directory
           - At time of writing the latest version of navcoin was 6.1.0
 
-2. Get the latest Navcoin files from here https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
+2. Get the latest Navcoin files from [here](https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz)
 
 ```
 pi@raspberrypi:~ $ wget https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
@@ -169,9 +169,11 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getstakinginfo
 
 When you see `true` for both enabled ad staking you are good to go.
 
-**Note**: If for some reason troubleshooting of the wallet via GUI is required the qt based GUI can be remotely accessed by running an Xserver on either the remote Linx/Windows/MAC machine. 
+#### Additional Notes
 
-I was using [MobaXterm](https://mobaxterm.mobatek.net/) and had to use the following command to be able to start `navcoin-qt` remotely.
+If for some reason troubleshooting of the wallet via GUI is required the qt based GUI can be remotely accessed by running an Xserver on either the remote Linux/Windows/MAC machine. 
+
+I was using [MobaXterm](https://mobaxterm.mobatek.net/) on Windows and had to use the following command to be able to start `navcoin-qt` remotely:
 
 ```
 pi@raspberrypi:~ $ sudo apt-get install libfontconfig1
