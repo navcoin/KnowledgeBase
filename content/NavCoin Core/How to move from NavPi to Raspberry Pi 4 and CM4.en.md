@@ -7,7 +7,7 @@ order: "000"
 
 # Moving from NavPi to headless Raspberry Pi Compute Module 4 for staking
 
-Managing the NavPi through its GUI made managing and staking Navcoin a very simple process.
+Managing the NavPi through its GUI made managing and staking Navcoin a very simple process. Wanting to use the latest navcore 6.X and moving to a more up-to-date and powerful made staking a little but more commandline heavy due to the missing GUI component when wanting to stake on a Pi remotely. 
 
 Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x and in  to stake Navcoins in a headless fasion.
 
@@ -19,7 +19,8 @@ Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi 
 This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/)
 
 1. Assumption is you have a running CM4 (how to can be found here https://www.youtube.com/watch?reload=9&v=jp_mF1RknU4) and ssh access to it
-   Notes: - I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
+
+   **Notes**: - I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
           - I also am utilizing the screen window session manager to keep things running in case you get disconnected (https://www.youtube.com/watch?v=hB6Y72DK8mc)
 
 	    ```
@@ -68,8 +69,8 @@ pi@raspberrypi:~/.navcoin4 $  tar -zxvf bootstrap.tar.gz
 
 There are several ways of doing this
 
-1. via ssh secure copy `scp`
-2. via SSD card moving the SSD from the old NavPi to the new Raspberry Pi and copying the `wallet.dat` file from there to `~/.navcoin4/`
+- via ssh secure copy `scp`
+- via SSD card moving the SSD from the old NavPi to the new Raspberry Pi and copying the `wallet.dat` file from there to `~/.navcoin4/`
 
 6. Return to the home folder and start the navcoin server
 ```
