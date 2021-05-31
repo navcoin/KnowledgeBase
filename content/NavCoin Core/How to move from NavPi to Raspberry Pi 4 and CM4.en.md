@@ -14,14 +14,16 @@ Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi 
 **Disclaimer**: This was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel
                 This may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
 
-**Special Thanks to @salmonskinroll and `@aguycalled` as well as `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>)**
+**Special Thanks to `@salmonskinroll` and `@aguycalled` as well as `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>)**
 
 This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/)
 
 1. Assumption is you have a running CM4 (how to can be found here https://www.youtube.com/watch?reload=9&v=jp_mF1RknU4) and ssh access to it
 
-   **Notes**: - I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
-          - I also am utilizing the screen window session manager to keep things running in case you get disconnected (https://www.youtube.com/watch?v=hB6Y72DK8mc)
+   **Notes**:
+
+- I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
+- I also am utilizing the screen window session manager to keep things running in case you get disconnected (https://www.youtube.com/watch?v=hB6Y72DK8mc)
 
 ```
 pi@raspberrypi:~ $ screen
@@ -86,7 +88,10 @@ pi@raspberrypi:~/.navcoin4 $ cd ~
 pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoind -t -daemon -datadir=/home/pi/.nacvoin4 -staking=1 -externalip={IP address} -upnp=0 -rpcbind=127.0.0.1 -rpcallowip=127.0.0.1 -rpcuser=test -rpcpassword=test -upgradewallet &
 ```
 
-**Note**: The `-upgradewallet` is only required the first time you run `navcoind` after you imported your `wallet.dat` file from the NavPi (see step 5) adding the `&` at the end of the command let's the command run in the background - you can bring the command back to the foreground by running `fg %1`
+**Notes**: 
+
+- The `-upgradewallet` is only required the first time you run `navcoind` after you imported your `wallet.dat` file from the NavPi (see step 5) adding the `&` at the end of the command let's the command run in the background - you can bring the command back to the foreground by running `fg %1`
+- I am not sure what the `-t` option is and does but I saw it somewhere used and it is not throwing an error so I left it in.
 
 More info on using bash jobs can be found [here](https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need)
 
