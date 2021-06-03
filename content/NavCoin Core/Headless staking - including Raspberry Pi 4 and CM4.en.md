@@ -1,29 +1,29 @@
 ---
-title: How to move from NavPi to Raspberry Pi 4 and CM4 for staking
-date: "2021-05-31"
+title: Headless staking - including Raspberry Pi 4 and CM4
+date: "2021-06-02"
 order: "000"
 ---
 
 
-# Moving from NavPi to headless Raspberry Pi Compute Module 4 for staking
+Managing the NavPi through its GUI made managing and staking Navcoin a very simple process. Wanting to use the latest navcore 6.X and moving to a more up-to-date and powerful Raspberry Pi platform made staking more commandline heavy due to the missing GUI component when wanting to stake on a Pi remotely.
 
-Managing the NavPi through its GUI made managing and staking Navcoin a very simple process. Wanting to use the latest navcore 6.X and moving to a more up-to-date and powerful Raspberry Pi platform made staking more commandline heavy due to the missing GUI component when wanting to stake on a Pi remotely. 
+Below is a quick and dirty how to on how to move from a NavPi to a headless set up. For this how to I use a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x to stake Navcoins, it should work for other Linux based platforms as well.
 
-Below is a quick and dirty how to on how to move from a NavPi to a Raspberry Pi Compute Module 4 (CM4) and the latest version of navcoin 6.x to stake Navcoins headless on the Pi.
 
 **Disclaimer**: This how to was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel. It may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
 
-**Special Thanks to `@salmonskinroll` and `@aguycalled` as well as `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>)**
+**Special Thanks to `@salmonskinroll` and `@aguycalled` on Discord. `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>) and BuckoNZ for this [post](https://forum.odroid.com/viewtopic.php?t=31824).**
 
-This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/).
+This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/) but as mentioned above it should work for other Linux based platforms toi stake headlessly.
+
+**Note**: 4GB Pi models are minimum but 8GB models are even better.
 
 1. Assumption is you have a running CM4 (how to can be found [here](https://www.youtube.com/watch?reload=9&v=jp_mF1RknU4)) and ssh access to it
 
 
    **Notes**:
 
-- I had to use Raspbian 32bit as I believe the Navcoin binaries only come in 32-bit for arm (if I learn otherwise I will update)
-- I also am utilizing the `screen` window session manager to keep things running in case you get disconnected. [Here is a quick intro on how to use `screen`](https://www.youtube.com/watch?v=hB6Y72DK8mc)
+- I am utilizing the `screen` window session manager to keep things running in case you get disconnected. [Here is a quick intro on how to use `screen`](https://www.youtube.com/watch?v=hB6Y72DK8mc)
 
 ```
 pi@raspberrypi:~ $ screen
@@ -35,10 +35,10 @@ pi@raspberrypi:~ $ screen
 pi@raspberrypi:~ $ screen -x
 ```
 
-          - I am performing all commands from the /home/pi directory
-          - At time of writing the latest version of navcoin was 6.1.0
+- I am performing all commands from the /home/pi directory
+- At time of writing the latest version of navcoin was 6.1.0
 
-2. Get the latest Navcoin files from [here](https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz)
+2. Get the latest Navcoin files from [here](https://build.nav.community/binaries/master/)
 
 ```
 pi@raspberrypi:~ $ wget https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
@@ -74,7 +74,9 @@ Then we untar the blockchain tarball
 pi@raspberrypi:~/.navcoin4 $  tar -zxvf bootstrap.tar.gz
 ```
 
-5. Copy your `wallet.dat` file from the NavPi data directry `~/.navcoin4/` to the new Paspberry Pi data directry `~/.navcoin4/`
+5. This next step is only required if you are moving from a navpi to transfer your wallet to your new headless device
+
+Copy your `wallet.dat` file from the NavPi data directry `~/.navcoin4/` to the new Paspberry Pi data directry `~/.navcoin4/`
 
 There are several ways of doing this
 
@@ -180,3 +182,9 @@ pi@raspberrypi:~ $ sudo apt-get install libfontconfig1
 ```
 
 **It should be mentioned that that the remote qt X session will get disconnected/stopped when the ssh server connection is closed.**
+
+
+##### To-do's
+
+- add navcoind daemon startup script to allow for auto starting of the navcoin daemon when OS starts up.
+- add additional important navcoin-cli command(s) ie. getstakereport
