@@ -12,7 +12,7 @@ Below is a quick and dirty how to on how to move from a NavPi to a headless set 
 
 **Disclaimer**: This how to was made to work with a lot of googeling and asking a ton of stupind questions to the patient Discord members of the Navcoin #navpi-support channel. It may not be the 'only' or 'best' way BUT this is how I was able to get staking working for me.
 
-**Special Thanks to `@salmonskinroll` and `@aguycalled` on Discord. `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>) and BuckoNZ for this [post](https://forum.odroid.com/viewtopic.php?t=31824).**
+**Special Thanks to `@salmonskinroll` and `@aguycalled` on Discord. `u/Zane_TLI` on Reddit for this [post](https://www.reddit.com/r/NavCoin/comments/l8jdcr/staking_with_navcoind_getstakinginfo_return>) and `BuckoNZ` for this [post](https://forum.odroid.com/viewtopic.php?t=31824).**
 
 This how to is using the CM4 [CM4104032](https://www.buyapi.ca/product/raspberry-pi-compute-module-4-wireless-4gb-32gb-cm4104032/) but as mentioned above it should work for other Linux based platforms toi stake headlessly.
 
@@ -38,19 +38,19 @@ pi@raspberrypi:~ $ screen -x
 - I am performing all commands from the /home/pi directory
 - At time of writing the latest version of navcoin was 6.1.0
 
-2. Get the latest Navcoin files from [here](https://build.nav.community/binaries/master/)
+1. Get the latest Navcoin files from [here](https://build.nav.community/binaries/master/)
 
 ```
 pi@raspberrypi:~ $ wget https://build.nav.community/binaries/master/navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
 ```
 
-3. Once downloaded untar the tarball file 
+1. Once downloaded untar the tarball file 
 
 ```
 pi@raspberrypi:~ $ tar -zxvf navcoin-6.1.0-arm-linux-gnueabihf.tar.gz
 ```
 
-4. Bootstrap you wallet
+1. Bootstrap you wallet
 
 ##### What is “Bootstrapping”? 
 
@@ -74,7 +74,7 @@ Then we untar the blockchain tarball
 pi@raspberrypi:~/.navcoin4 $  tar -zxvf bootstrap.tar.gz
 ```
 
-5. This next step is only required if you are moving from a navpi to transfer your wallet to your new headless device
+1. This next step is only required if you are moving from a navpi to transfer your wallet to your new headless device
 
 Copy your `wallet.dat` file from the NavPi data directry `~/.navcoin4/` to the new Paspberry Pi data directry `~/.navcoin4/`
 
@@ -83,7 +83,7 @@ There are several ways of doing this
 - via ssh secure copy `scp`
 - via SSD card moving the SSD from the old NavPi to the new Raspberry Pi and copying the `wallet.dat` file from there to `~/.navcoin4/`
 
-6. Return to the home folder and start the navcoin server
+1. Return to the home folder and start the navcoin server
 
 ```
 pi@raspberrypi:~/.navcoin4 $ cd ~
@@ -138,7 +138,7 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli getinfo
 }
 ```
 
-7. Unlock your wallet for staking
+1. Unlock your wallet for staking
 
 To unlock your wallet for staking run the following 
 
@@ -148,7 +148,7 @@ pi@raspberrypi:~ $ navcoin-6.1.0/bin/navcoin-cli walletpassphrase 'XXXXXX' 99999
 
 **Note**: Your wallet password will be stored by bash in your bash history. Run the `history` command and delete the line containing your wallet password with `history -d XXX` where `XXX` is the number of the history line that is being displayed when running the `history` command.
 
-8. Check that you are staking
+1. Check that you are staking
 
 Check that you are staking by running the command
 
