@@ -15,8 +15,8 @@ This guide has only been tested on Ubuntu 20.04.
 Install essential packages before building from source
 
 ```
-sudp apt update
-sudp apt upgrade
+sudo apt update
+sudo apt upgrade
 sudo apt-get -y install build-essential libtool autotools-dev automake pkg-config git curl libattr1-dev cmake
 ```
 
