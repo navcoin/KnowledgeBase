@@ -10,7 +10,7 @@ A boostrap for the wallet can be downloaded from:
 
 https://bootstrap.nav.community/bootstrap.tar.gz
 
-NOTE: this may take some time as this file is around 3.3GB in size
+NOTE: this may take some time as this file is around 4 GB in size
 
 Once downloaded, you will need to use a program like winzip (tar/gunzip on linux) to extract the blockchain folders from this file.
 
