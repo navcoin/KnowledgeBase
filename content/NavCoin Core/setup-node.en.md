@@ -66,7 +66,7 @@ Build the depends and the source code
 cd ./depends && make -j$(nproc) && cd .. && ./autogen.sh && ./configure --prefix=`pwd`/depends/`uname -m`-pc-linux-gnu && make -j$(nproc) &
 ```
 
-### Bulding for Windows 10
+### Building for Windows 10
 
 You can install Ubuntu from Windows Store 
 
